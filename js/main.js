@@ -10,7 +10,7 @@ var quotes = [
     { quote: "“A friend is someone who knows all about you and still loves you.”", quoteWriter: "--Elbert Hubbard" },
 ];
 
-// ⬇⬇⬇⬇⬇ There is a problem     .⬇⬇⬇⬇⬇
+// ⬇⬇⬇⬇⬇ There is a problem that can generate the same number and quote not change.⬇⬇⬇⬇⬇
 
 function generateQuote() {
     var num = Math.floor(Math.random() * quotes.length);

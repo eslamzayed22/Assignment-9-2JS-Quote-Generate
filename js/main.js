@@ -12,14 +12,13 @@ var quotes = [
 
 // ⬇⬇⬇⬇⬇ There is a problem that can generate the same number and quote not change.⬇⬇⬇⬇⬇
 
-function generateQuote() {
-    var num = Math.floor(Math.random() * quotes.length);
-    var { quote, quoteWriter } = quotes[num];
-    document.getElementById('quote').innerHTML = quote;
-    document.getElementById('quoteWriter').innerHTML =  quoteWriter;
-}
-
-generateQuote();
+// function generateQuote() {
+//     var num = Math.floor(Math.random() * quotes.length);
+//     var { quote, quoteWriter } = quotes[num];
+//     document.getElementById('quote').innerHTML = quote;
+//     document.getElementById('quoteWriter').innerHTML =  quoteWriter;
+// }
+// generateQuote();
 
 // ⬇⬇⬇⬇⬇ Application to Solve the problem of generating the same number ⬇⬇⬇⬇⬇
 
@@ -36,7 +35,19 @@ generateQuote();
 //     document.getElementById('quote').innerHTML = quote;
 //     document.getElementById('quoteWriter').innerHTML =  quoteWriter;
 // }
-
 // generateQuote();
 
+// ⬇⬇⬇⬇⬇ Another solution ⬇⬇⬇⬇⬇
 
+// function generateQuote() {
+//     var num = Math.floor(Math.random() * quotes.length);
+//     for (var i = 0; i < quotes.length; i++) {
+//         if (i === num) {
+//             var { quote, quoteWriter } = quotes[i];
+//             document.getElementById('quote').innerHTML = quote;
+//             document.getElementById('quoteWriter').innerHTML =  quoteWriter;
+//             break; // Exit the loop once the random quote is generated
+//         }
+//     }
+// }
+// generateQuote();

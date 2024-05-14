@@ -12,13 +12,13 @@ var quotes = [
 
 // ⬇⬇⬇⬇⬇ There is a problem that can generate the same number and quote not change.⬇⬇⬇⬇⬇
 
-// function generateQuote() {
-//     var num = Math.floor(Math.random() * quotes.length);
-//     var { quote, quoteWriter } = quotes[num];
-//     document.getElementById('quote').innerHTML = quote;
-//     document.getElementById('quoteWriter').innerHTML =  quoteWriter;
-// }
-// generateQuote();
+function generateQuote() {
+    var num = Math.floor(Math.random() * quotes.length);
+    var { quote, quoteWriter } = quotes[num];
+    document.getElementById('quote').innerHTML = quote;
+    document.getElementById('quoteWriter').innerHTML =  quoteWriter;
+}
+generateQuote();
 
 // ⬇⬇⬇⬇⬇ Application to Solve the problem of generating the same number ⬇⬇⬇⬇⬇
 
